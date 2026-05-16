@@ -167,10 +167,6 @@ main {
   @apply text-3xl;
 }
 
-.menu button#credits {
-  @apply size-28 min-w-28 min-h-28;
-}
-
 .menu footer {
   @apply text-white opacity-0 text-xl absolute bottom-4;
   text-shadow: 0.5px 0.5px 0.5px black;
@@ -190,7 +186,11 @@ main {
 }
 
 .modal-container .modal-content:has(#credits) {
-  @apply size-[26rem] min-w-[26rem] min-h-[26rem] max-h-[85svh] px-14 py-8 overflow-y-auto;
+  @apply size-[34rem] min-w-[34rem] min-h-[34rem] max-h-[90svh] px-16 py-10 overflow-y-auto;
+}
+
+.modal-container:has(#credits) #modal-close {
+  @apply mb-[15.5rem] ml-[12.5rem];
 }
 
 .modal {
@@ -198,7 +198,7 @@ main {
 }
 
 #credits.modal {
-  @apply w-full max-w-[15rem] gap-3;
+  @apply w-full max-w-[19rem] gap-3;
 }
 
 #credits.modal > .flex {
@@ -219,11 +219,15 @@ main {
 
 @media (max-width: 640px) {
   .modal-container .modal-content:has(#credits) {
-    @apply size-[min(94vw,26rem)] min-w-0 min-h-[min(94vw,26rem)] max-h-[78svh] px-10 py-6;
+    @apply size-[min(96vw,34rem)] min-w-0 min-h-[min(96vw,34rem)] max-h-[82svh] px-11 py-7;
   }
 
   #credits.modal {
-    @apply max-w-[12.5rem];
+    @apply max-w-[15rem];
+  }
+
+  .modal-container:has(#credits) #modal-close {
+    @apply mb-[calc(48vw-0.5rem)] ml-[calc(44vw-1rem)];
   }
 }
 
