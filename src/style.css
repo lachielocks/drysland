@@ -167,6 +167,10 @@ main {
   @apply text-3xl;
 }
 
+.menu .menu-settings {
+  @apply size-16 min-w-16 min-h-16 p-2;
+}
+
 .menu footer {
   @apply text-white opacity-0 text-xl absolute bottom-4;
   text-shadow: 0.5px 0.5px 0.5px black;
@@ -185,14 +189,25 @@ main {
   @apply hex bg-white text-slate-600 size-96 min-w-96 z-10 flex items-center justify-center px-12 scale-0;
 }
 
+.modal-container:has(#credits) {
+  @apply grid place-items-center;
+}
+
+.modal-container:has(#credits) .modal-content,
+.modal-container:has(#credits) #modal-close {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .modal-container .modal-content:has(#credits) {
-  @apply size-auto w-[min(28rem,94vw)] min-w-[24rem] min-h-[36rem] max-h-[85svh] px-8 py-9 overflow-y-auto;
+  mask-image: none;
+  -webkit-mask-image: none;
+  @apply size-auto w-[min(28rem,94vw)] min-w-[20rem] max-h-[85svh] rounded-2xl shadow-2xl px-10 py-8 overflow-y-auto items-start justify-start;
 }
 
 .modal-container:has(#credits) #modal-close {
-  @apply mb-0 ml-0;
-  top: calc(50% - 19.5rem);
-  left: calc(50% + 12.5rem);
+  @apply static mb-0 ml-0 z-20;
+  translate: min(13rem, 44vw) calc(-1 * min(17.5rem, 40vh));
 }
 
 .modal {
@@ -200,11 +215,11 @@ main {
 }
 
 #credits.modal {
-  @apply w-full gap-3;
+  @apply w-full max-w-full gap-3 items-stretch;
 }
 
 #credits.modal > .flex {
-  @apply w-full text-left;
+  @apply w-full text-left px-1;
 }
 
 .modal h2 {
@@ -221,12 +236,11 @@ main {
 
 @media (max-width: 640px) {
   .modal-container .modal-content:has(#credits) {
-    @apply min-h-[72svh] max-h-[78svh] px-6 py-7;
+    @apply max-h-[78svh] px-7 py-6;
   }
 
   .modal-container:has(#credits) #modal-close {
-    top: calc(50% - 39svh);
-    left: calc(50% + 40vw);
+    translate: 42vw calc(-1 * 38vh);
   }
 }
 
