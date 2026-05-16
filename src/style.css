@@ -186,7 +186,7 @@ main {
 }
 
 .modal-container .modal-content:has(#credits) {
-  @apply size-[38rem] min-w-[38rem] min-h-[38rem] max-h-[90svh] px-12 py-8 overflow-hidden flex flex-col items-center justify-start;
+  @apply size-[38rem] min-w-[38rem] min-h-[38rem] max-h-[90svh] px-12 pt-14 pb-8 overflow-hidden flex flex-col items-center justify-start;
 }
 
 .modal-container:has(#credits) #modal-close {
@@ -227,7 +227,7 @@ main {
 
 @media (max-width: 640px) {
   .modal-container .modal-content:has(#credits) {
-    @apply size-[min(96vw,38rem)] min-w-0 min-h-[min(96vw,38rem)] max-h-[82svh] px-9 py-6;
+    @apply size-[min(96vw,38rem)] min-w-0 min-h-[min(96vw,38rem)] max-h-[82svh] px-9 pt-12 pb-6;
   }
 
   #credits.modal {
