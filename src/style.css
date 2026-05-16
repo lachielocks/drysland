@@ -185,12 +185,25 @@ main {
   @apply hex bg-white text-slate-600 size-96 min-w-96 z-10 flex items-center justify-center px-12 scale-0;
 }
 
+.modal-container:has(#credits) {
+  @apply grid place-items-center;
+}
+
+.modal-container:has(#credits) .modal-content,
+.modal-container:has(#credits) #modal-close {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .modal-container .modal-content:has(#credits) {
-  @apply size-[34rem] min-w-[34rem] min-h-[34rem] max-h-[90svh] px-16 py-10 overflow-y-auto;
+  @apply size-[34rem] min-w-[34rem] min-h-[34rem] max-h-[90svh] px-12 py-8 overflow-hidden flex flex-col items-center justify-start;
 }
 
 .modal-container:has(#credits) #modal-close {
-  @apply mb-[15.5rem] ml-[12.5rem];
+  position: relative;
+  z-index: 20;
+  margin: 0;
+  translate: 16.75rem -16.75rem;
 }
 
 .modal {
@@ -198,7 +211,8 @@ main {
 }
 
 #credits.modal {
-  @apply w-full max-w-[19rem] gap-3;
+  @apply w-full max-w-[19rem] min-h-0 flex-1 overflow-y-auto overscroll-contain gap-3 px-1;
+  scrollbar-width: thin;
 }
 
 #credits.modal > .flex {
@@ -219,7 +233,7 @@ main {
 
 @media (max-width: 640px) {
   .modal-container .modal-content:has(#credits) {
-    @apply size-[min(96vw,34rem)] min-w-0 min-h-[min(96vw,34rem)] max-h-[82svh] px-11 py-7;
+    @apply size-[min(96vw,34rem)] min-w-0 min-h-[min(96vw,34rem)] max-h-[82svh] px-9 py-6;
   }
 
   #credits.modal {
@@ -227,7 +241,7 @@ main {
   }
 
   .modal-container:has(#credits) #modal-close {
-    @apply mb-[calc(48vw-0.5rem)] ml-[calc(44vw-1rem)];
+    translate: calc(min(48vw, 17rem) + 0.75rem) calc(-1 * min(48vw, 17rem) - 0.75rem);
   }
 }
 
