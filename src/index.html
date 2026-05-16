@@ -15,14 +15,14 @@
     />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lachiethurlow.com/" />
+    <meta property="og:url" content="https://drysland.lachiethurlow.com/" />
     <meta property="og:title" content="Drysland" />
     <meta property="og:site_name" content="Drysland" />
     <meta
       property="og:description"
       content="Rotate the tiles to restore the course of the river and un-Dry the Island!"
     />
-    <meta property="og:image" content="https://lachiethurlow.com/cover.png" />
+    <meta property="og:image" content="https://drysland.lachiethurlow.com/cover.png" />
 
     <style>
       html,
@@ -41,7 +41,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="canonical" href="https://lachiethurlow.com/" />
+    <link rel="canonical" href="https://drysland.lachiethurlow.com/" />
     <link
       rel="apple-touch-startup-image"
       media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
@@ -274,10 +274,6 @@
               <i class="fa-solid fa-play"></i>
               <label>Start</label>
             </button>
-            <button id="auth" class="hex">
-              <i class="fa-brands fa-google"></i>
-              <label>Log in</label>
-            </button>
             <button id="credits" class="hex absolute -bottom-20">
               <i class="fa-solid fa-circle-info"></i>
               <label>Credits</label>
@@ -392,30 +388,25 @@
             <a href="https://poly.pizza" target="_blank"> Poly Pizza </a>
           </p>
 
+          <h2>License</h2>
           <p>
-            By
-            <a href="https://lachiethurlow.com" target="_blank" rel="noopener noreferrer">
-              Lachie Thurlow
-            </a>
-            ·
+            Based on Drysland by Francesco Dammacco. Modified version © Lachie Thurlow.
+            Licensed under
+            <a
+              href="https://www.gnu.org/licenses/agpl-3.0.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GNU AGPL v3</a
+            >.
             <a
               href="https://github.com/lachielocks/drysland"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Source code
-            </a>
+              Source code</a
+            >
           </p>
-        </div>
-      </div>
-
-      <div id="state-conflict" class="modal hidden">
-        <p>Looks like your local and remote saves don’t match, choose the one to keep:</p>
-        <div class="slots flex justify-center gap-2">
-          <button id="save-slot" class="hex primary hidden size-32">
-            <p class="level text-xl">level</p>
-            <p class="date text-xs">date</p>
-          </button>
         </div>
       </div>
 
@@ -438,29 +429,6 @@
         </p>
       </div>
 
-      <div id="auth-login" class="modal hidden">
-        <h2>Log in</h2>
-        <p>
-          Your progress is automatically saved on this device. Log in with Google to back up and
-          sync it across all your devices.
-        </p>
-        <div class="flex justify-center gap-2">
-          <button id="cancel" class="hex secondary size-20">Cancel</button>
-          <button id="continue" class="hex primary size-20">Continue</button>
-        </div>
-      </div>
-
-      <div id="auth-logout" class="modal hidden">
-        <h2>Log out</h2>
-        <p>
-          You’re currently syncing your progress with your Google account. <br />
-          Logging out will stop cloud sync, but your progress will still be saved locally.
-        </p>
-        <div class="flex justify-center gap-2">
-          <button id="cancel" class="hex secondary size-20">Cancel</button>
-          <button id="continue" class="hex primary size-20">Continue</button>
-        </div>
-      </div>
 
       <!-- header -->
       <button id="menu" title="Main menu" class="hex absolute top-4 left-4 z-10 hidden">

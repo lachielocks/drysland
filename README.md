@@ -3,12 +3,11 @@
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![Three.js	](https://img.shields.io/badge/ThreeJs-black?style=for-the-badge&logo=three.js&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 > 🥇 1st place in the [Three.js Journey Challenge 017](https://threejs-journey.com/challenges/017-island)
 
-> By [Lachie Thurlow](https://lachiethurlow.com) · [Play](https://lachiethurlow.com) · [Source](https://github.com/lachielocks/drysland)
+> By [Lachie Thurlow](https://lachiethurlow.com) · [Play](https://drysland.lachiethurlow.com) · [Source](https://github.com/lachielocks/drysland)
 
 Inspired by classic **pipe-connection games**, Drysland is a relaxing, minimalist puzzle experience where you restore the flow of a river across a parched island by rotating and reconnecting its broken segments to bring water — and life — back to the land.
 
@@ -24,7 +23,6 @@ Pipe networks are created using a simplified version of the **Growing Tree algor
 - [@yomotsu/camera-controls](https://github.com/yomotsu/camera-controls)
 - [@pmndrs/pointer-events](https://www.npmjs.com/package/@pmndrs/pointer-events)
 - [GSAP](https://gsap.com/)
-- [Firebase](https://firebase.google.com/)
 - [Tailwind](https://tailwindcss.com/)
 
 ## Setup
@@ -64,14 +62,9 @@ The algorithm is configurable, the main parameters currently in use are:
 
 These parameters allow for fine-tuning the level structure and difficulty, and can be adjusted to explore different types of puzzle layouts. There’s room to explore more sophisticated path-building strategies.
 
-### Save System & Sync
-
-<img src="./screens/log-in.png" alt="Log in"  >
-<img src="./screens/state-conflict.png" alt="Cover"  >
+### Save System
 
 Drysland automatically saves your progress locally using the browser’s local storage, so you can pick up right where you left off.
-For cross-device play, you can optionally log in with a Google account to sync your progress across multiple devices.
-If differences are detected between the local and cloud save data, a simple conflict resolution system will help you choose which version to keep.
 
 ### Graphics Settings
 
@@ -138,6 +131,6 @@ If you have any suggestions, feel free to reach out!
 
 ## License
 
-Copyright © 2025 Francesco Dammacco.  
-Modified and maintained by [Lachie Thurlow](https://lachiethurlow.com) (2026).  
-This project is licensed under the [GNU Affero General Public License v3.0](./LICENSE).
+Based on Drysland by Francesco Dammacco. Modified version © Lachie Thurlow. Licensed under [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html). [Source code](https://github.com/lachielocks/drysland)
+
+See [LICENSE](./LICENSE) for the full license text.

@@ -3,8 +3,7 @@ import BlocksConfig from '@config/blocks'
 import { default as GridConfig } from '@config/grid'
 import LandscapeConfig from '@config/landscape'
 import OceanConfig from '@config/ocean'
-import Auth from '@fire/auth'
-import State from '@fire/state'
+import State from '@storage/state'
 import Grid from '@grid/grid'
 import Menu from '@ui/menu'
 import Modal from '@ui/modal'
@@ -97,8 +96,7 @@ export default class Experience {
     this.menu = new Menu()
     this.soundControls = new SoundControls()
 
-    UI.startButton.onClick(this.start.bind(this)).disable(true)
-    Auth.instance.subscribe(() => UI.startButton.enable())
+    UI.startButton.onClick(this.start.bind(this)).enable()
     UI.creditsButton.onClick(() => Modal.instance.open('#credits.modal'))
     UI.menuButton.onClick(this.openMenu.bind(this))
     UI.nextButton.onClick(this.nextLevel.bind(this))

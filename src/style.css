@@ -185,20 +185,49 @@ main {
   @apply hex bg-white text-slate-600 size-96 min-w-96 z-10 flex items-center justify-center px-12 scale-0;
 }
 
+.modal-container .modal-content:has(#credits) {
+  @apply size-auto w-[min(28rem,94vw)] min-w-[24rem] min-h-[36rem] max-h-[85svh] px-8 py-9 overflow-y-auto;
+}
+
+.modal-container:has(#credits) #modal-close {
+  @apply mb-0 ml-0;
+  top: calc(50% - 19.5rem);
+  left: calc(50% + 12.5rem);
+}
+
 .modal {
   @apply flex flex-col items-center gap-4 text-center;
 }
 
+#credits.modal {
+  @apply w-full gap-3;
+}
+
+#credits.modal > .flex {
+  @apply w-full text-left;
+}
+
 .modal h2 {
-  @apply text-2xl;
+  @apply text-2xl shrink-0;
 }
 
 .modal p {
-  @apply leading-4;
+  @apply leading-5;
 }
 
 #credits.modal a {
   @apply underline hover:text-primary active:text-primary;
+}
+
+@media (max-width: 640px) {
+  .modal-container .modal-content:has(#credits) {
+    @apply min-h-[72svh] max-h-[78svh] px-6 py-7;
+  }
+
+  .modal-container:has(#credits) #modal-close {
+    top: calc(50% - 39svh);
+    left: calc(50% + 40vw);
+  }
 }
 
 /* UI */
