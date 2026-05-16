@@ -1,4 +1,3 @@
-import { sentryVitePlugin } from '@sentry/vite-plugin'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import glsl from 'vite-plugin-glsl'
@@ -21,10 +20,6 @@ export default {
     tailwindcss(), // Restart server on static file change
     restart({ restart: ['../static/**'] }),
     glsl(),
-    sentryVitePlugin({
-      org: 'dammafra',
-      project: 'drysland',
-    }),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {

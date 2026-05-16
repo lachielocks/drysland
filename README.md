@@ -8,7 +8,7 @@
 
 > 🥇 1st place in the [Three.js Journey Challenge 017](https://threejs-journey.com/challenges/017-island)
 
-> Try it live here 👉 [drysland.dammafra.dev](https://drysland.dammafra.dev)
+> By [Lachie Thurlow](https://lachiethurlow.com) · [Play](https://lachiethurlow.com) · [Source](https://github.com/lachielocks/drysland)
 
 Inspired by classic **pipe-connection games**, Drysland is a relaxing, minimalist puzzle experience where you restore the flow of a river across a parched island by rotating and reconnecting its broken segments to bring water — and life — back to the land.
 
@@ -138,6 +138,6 @@ If you have any suggestions, feel free to reach out!
 
 ## License
 
-© 2025 Francesco Dammacco  
-This project is licensed under the GNU Affero General Public License v3.0.  
-See the [LICENSE](./LICENSE) file for details.
+Copyright © 2025 Francesco Dammacco.  
+Modified and maintained by [Lachie Thurlow](https://lachiethurlow.com) (2026).  
+This project is licensed under the [GNU Affero General Public License v3.0](./LICENSE).
