@@ -186,16 +186,18 @@ main {
 }
 
 .modal-container .modal-content:has(#credits) {
-  @apply size-[36rem] min-w-[36rem] min-h-[36rem] max-h-[90svh] px-12 py-8 overflow-hidden flex flex-col items-center justify-start;
+  @apply size-[38rem] min-w-[38rem] min-h-[38rem] max-h-[90svh] px-12 py-8 overflow-hidden flex flex-col items-center justify-start;
 }
 
 .modal-container:has(#credits) #modal-close {
   position: fixed;
   bottom: 5.5rem;
-  left: 50%;
+  left: 0;
+  right: 0;
   z-index: 30;
-  margin: 0;
-  translate: -50% 0;
+  width: fit-content;
+  margin: 0 auto;
+  translate: none;
 }
 
 .modal {
@@ -203,7 +205,7 @@ main {
 }
 
 #credits.modal {
-  @apply w-full max-w-[20rem] min-h-0 flex-1 overflow-y-auto overscroll-contain gap-3 px-1 text-sm;
+  @apply w-full max-w-[21rem] min-h-0 flex-1 overflow-y-auto overscroll-contain gap-3 px-1 text-sm;
   scrollbar-width: thin;
 }
 
@@ -225,7 +227,7 @@ main {
 
 @media (max-width: 640px) {
   .modal-container .modal-content:has(#credits) {
-    @apply size-[min(96vw,36rem)] min-w-0 min-h-[min(96vw,36rem)] max-h-[82svh] px-9 py-6;
+    @apply size-[min(96vw,38rem)] min-w-0 min-h-[min(96vw,38rem)] max-h-[82svh] px-9 py-6;
   }
 
   #credits.modal {
