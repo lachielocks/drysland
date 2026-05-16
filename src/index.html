@@ -269,20 +269,19 @@
         <div class="relative text-center flex flex-col items-center">
           <div class="bg-hex"></div>
           <h1 class="title">Drysland</h1>
-          <div class="menu-actions flex flex-col items-center gap-4">
+          <div class="flex flex-row justify-center gap-4 relative">
             <button id="start" class="hex">
               <i class="fa-solid fa-play"></i>
               <label>Start</label>
             </button>
-            <div class="flex flex-row items-end justify-center gap-4">
-              <button id="credits" class="hex">
-                <i class="fa-solid fa-circle-info"></i>
-                <label>Credits</label>
-              </button>
-              <button id="settings" title="Settings" class="hex menu-settings">
-                <i class="fa-solid fa-cog text-2xl"></i>
-              </button>
-            </div>
+            <div class="hex size-24 invisible pointer-events-none" aria-hidden="true"></div>
+            <button id="credits" class="hex absolute -bottom-20">
+              <i class="fa-solid fa-circle-info"></i>
+              <label>Credits</label>
+            </button>
+            <button id="settings" title="Settings" class="hex absolute -bottom-11 -right-0.75">
+              <i class="fa-solid fa-cog text-2xl"></i>
+            </button>
           </div>
         </div>
 
