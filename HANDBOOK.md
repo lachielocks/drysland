@@ -14,8 +14,6 @@ Inspired by classic **pipe-connection games**, Drysland is a relaxing, minimalis
 Each level in Drysland is a procedurally generated island that gradually increases in size and difficulty.
 Pipe networks are created using a simplified version of the **Growing Tree algorithm**, ensuring each puzzle is both solvable and unique.
 
-<img src="./static/cover.png" alt="Cover"  >
-
 ## Technologies Used
 
 - [Three.js](https://threejs.org/) (3D rendering)
@@ -68,23 +66,15 @@ Drysland automatically saves your progress locally using the browser’s local s
 
 ### Graphics Settings
 
-<img src="./screens/settings.png" alt="Settings"  >
-
 Drysland offers a simple toggle between Quality and Performance modes. This setting adjusts shadows, water effects, and other visual details to strike a balance between visual fidelity and smooth performance. Your preference is saved and applied automatically each time you return.
 
 ### Mobile-Friendly
 
 Drysland is optimized for mobile devices, providing a smooth and engaging experience on smartphones and tablets. It adapts to smaller screens, ensuring easy interaction and navigation on touch interfaces.
 
-|                                                             |                                                               |                                                            |                                                                  |
-| ----------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- |
-| <img src="./screens/mobile-1.png" alt="Mobile Main Menu"  > | <img src="./screens/mobile-2.png" alt="Mobile Level Start"  > | <img src="./screens/mobile-3.png" alt="Mobile Gameplay"  > | <img src="./screens/mobile-4.png" alt="Mobile Level Complete"  > |
-
 ## Credits
 
 Check out the credits section in the project for a full list of resources used
-
-<img src="./screens/credits.png" alt="Credits"  >
 
 - **Hexagon Kit**  
   by [Kenney.nl](https://kenney.nl/assets/hexagon-kit)
